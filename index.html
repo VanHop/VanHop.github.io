@@ -143,9 +143,9 @@ body {
     const merchant_code = urlParams.get('merchant_code');
     const check_sum = urlParams.get('check_sum');
 	if (subId) {
-		$('#uob-pru').attr('src', 'https://uob-pru.dangkymothe.com/?transId=' + transId +'&subId=' + subId + '&merchant_code=DAGORAS08&check_sum=' + encodeURIComponent(check_sum));
+		$('#uob-pru').attr('src', 'https://uob-pru.goibaohiemvn.com/?transId=' + transId +'&subId=' + subId + '&merchant_code=DAGORAS08&check_sum=' + encodeURIComponent(check_sum));
 	} else {
-		$('#uob-pru').attr('src', 'https://uob-pru.dangkymothe.com');
+		$('#uob-pru').attr('src', 'https://uob-pru.goibaohiemvn.com');
 	}
 	$('.tab-link').click( function() {
 	
@@ -159,9 +159,9 @@ body {
 		var tab2Src = $('#uob-homestar').attr('src');
 		if(tab2Src === '') {
 			if (subId) {
-				$('#uob-homestar').attr('src', 'http://uob-homestar.dangkymothe.com/?transId=' + transId +'&subId=' + subId + '&merchant_code=DAGORAS08&check_sum=' + encodeURIComponent(check_sum));
+				$('#uob-homestar').attr('src', 'http://uob-homestar.sanphamvay.com/?transId=' + transId +'&subId=' + subId + '&merchant_code=DAGORAS08&check_sum=' + encodeURIComponent(check_sum));
 			} else {
-				$('#uob-homestar').attr('src', 'http://uob-homestar.dangkymothe.com');
+				$('#uob-homestar').attr('src', 'http://uob-homestar.sanphamvay.com');
 			}
 		}
 	}
